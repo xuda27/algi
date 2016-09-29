@@ -30,8 +30,10 @@ public class Test2 {
 		for( int i=0;i<n;i++){
 			if(  p2==null){
 				return null;
+			}else {
+				p2 =p2.nextNode;
 			}
-			p2=p2.nextNode;
+			
 		}
 		if(  p2==null){
 			return null;

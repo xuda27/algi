@@ -3,10 +3,9 @@ package com.yc.bean3_datatype2.StackType;
 import com.yc.bean3_datatype1.LinkedList.LinkedListType;
 
 public class StackType2 {
-	private static final int MAXLEN = 100;
 	// 可以使用线性表，也可以使用链表
 	//private Object[] data = new Object[MAXLEN];
-	private LinkedListType data=new LinkedListType();    //TODO:
+	private LinkedListType<Object> data=new LinkedListType<Object>();    //TODO:
 
 	private int top; // 栈顶
 
@@ -14,7 +13,7 @@ public class StackType2 {
 	public void init() {
 		top = 0;
 		//data = new Object[MAXLEN];
-		data =new LinkedListType();     //TODO:
+		data =new LinkedListType<Object>();     //TODO:
 		System.gc();
 	}
 
@@ -25,7 +24,7 @@ public class StackType2 {
 
 	// 判断栈是否已经存满
 	public boolean isFull() {
-		return top == MAXLEN ? true : false;
+		return top == Integer.MAX_VALUE ? true : false;
 	}
 
 	// 清空栈
@@ -36,7 +35,7 @@ public class StackType2 {
 	// 压栈
 	public boolean push(Object obj) {
 		// 判断是否yi出
-		if (top >= MAXLEN) {
+		if (top >= Integer.MAX_VALUE) {
 			throw new RuntimeException("栈溢出");
 		}
 		//data[top] = obj;

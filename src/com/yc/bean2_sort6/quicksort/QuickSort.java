@@ -1,6 +1,15 @@
 package com.yc.bean2_sort6.quicksort;
 
-
+/**
+ * 找pivot值
+ * 1.一次外循环要保证过所有比pivot小的值在左边，比pivot大的值在右边
+ * 2.让i从第一个索引循环，找比pivot大的值，找到就记录索引
+ * 3.让j从最后一个元素向前循环，找比pivot小的值，找到就记录索引
+ * 4.接着小的值与大的值的位置交换一次
+ * 5.取出pivot当前位置，在递归调用快排
+ * @author Eden
+ *
+ */
 public class QuickSort {
 	private int[] a;
 	public QuickSort(int[] a) {
