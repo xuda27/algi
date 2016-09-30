@@ -14,7 +14,10 @@ public class QueueType {
 		System.gc();
 	}
 
-	// 判断是否为空队列
+	/**
+	 * 判断是否为空队列
+	 * @return
+	 */
 	public boolean isEmpty() {
 		return head == tail ? true : false;
 	}

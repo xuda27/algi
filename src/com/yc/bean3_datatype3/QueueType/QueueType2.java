@@ -2,7 +2,11 @@ package com.yc.bean3_datatype3.QueueType;
 
 import com.yc.bean3_datatype1.LinkedList.LinkedListType;
 
-//使用  链表作为底层存储实现
+/**
+ * 使用链表作为底层存储实现
+ * @author Eden
+ *
+ */
 public class QueueType2 {
 	private static final int MAXLEN = Integer.MAX_VALUE;
 	private LinkedListType data=new LinkedListType();   // TODO:

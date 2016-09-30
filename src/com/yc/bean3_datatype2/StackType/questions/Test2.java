@@ -31,7 +31,11 @@ class MyStack2 extends StackType {
 	private StackType mins = new StackType();
 	private StackType maxs= new StackType();
 
-	// 压栈
+	/**
+	 * 压栈
+	 * @param obj
+	 * @return
+	 */
 	public boolean push(Comparable obj) {
 		// 先取出当前栈中最小的值,可以保证mins这个栈中的栈顶总是最小值
 		if (min()==null||obj.compareTo(min()) < 0) {

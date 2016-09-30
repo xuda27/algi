@@ -1,4 +1,7 @@
 package com.yc.bean3_datatype2.StackType;
+
+import java.util.Stack;
+
 /**
  * 栈：
  * 	特点：后进先出
@@ -11,7 +14,10 @@ public class StackType<T> {
 	// 可以使用线性表，也可以使用链表
 	protected Object[] data = new Object[MAXLEN];
 	
-	// 记录栈顶的指针
+	Stack<Integer> s = new Stack<Integer>();
+	/**
+	 * 记录栈顶的指针
+	 */
 	protected int top; // 栈顶
 
 	/**
@@ -65,6 +71,7 @@ public class StackType<T> {
 	 *  出栈
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public T pop() {
 		// 判断是否到栈底
 		if (top == 0) {
@@ -77,6 +84,7 @@ public class StackType<T> {
 	 * 查看栈顶值
 	 * @return pop值
 	 */
+	@SuppressWarnings("unchecked")
 	public T peek() {
 		// 判断是否到栈底
 		if (top == 0) {
@@ -94,7 +102,7 @@ public class StackType<T> {
 	}
 
 	public static void main(String[] args) {
-		StackType st=new StackType();
+		StackType<String> st=new StackType<String>();
 		st.push("a");
 		st.push("b");
 		
@@ -109,5 +117,7 @@ public class StackType<T> {
 		System.out.println( st.peek() );
 		
 	}
+
+
 
 }
