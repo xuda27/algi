@@ -1,10 +1,4 @@
-# algi
-
->原文来自：https://github.com/zhangyingchengqi/algorithm
-
-
-## day01
-
+# 一些算法
 1. **recursion 递归**
   1. 阶乘
   2. 斐波那契数列（Fibonacci sequence）
