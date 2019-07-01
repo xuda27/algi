@@ -46,7 +46,7 @@ public class BubbleSort implements Sortable {
 				}
 			}
 			if(exchange = false){ // 本趟没有发生交换，中途结束算法
-				return ;
+				return;
 			}
 		}
 	}

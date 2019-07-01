@@ -8,6 +8,7 @@ import com.yc.bean2_sort.Sortable;
  * 3.让j从最后一个元素向前循环，找比pivot小的值，找到就记录索引
  * 4.接着小的值与大的值的位置交换一次
  * 5.取出pivot当前位置，在递归调用快排
+ *
  * @author Eden
  *
  */

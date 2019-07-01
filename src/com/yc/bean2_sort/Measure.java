@@ -10,18 +10,18 @@ import com.yc.bean2_sort5.mergesort.MergeSorter;
 import com.yc.bean2_sort6.quicksort.QkSort;
 
 public class Measure {
-	public static void main(String[] args) {
-		int []a = new int[99999];
-		Random r = new Random();
-		for(int i=0; i<a.length; i++){
-			a[i] = r.nextInt(9999999);
-		}
-		Sortable sort = new QkSort(a);
-		
-		long start = System.currentTimeMillis();
-		sort.sort();
-		long end = System.currentTimeMillis();
-		System.out.println("排序时间："+(end-start));
-		
-	}
+    public static void main(String[] args) {
+        int[] a = new int[99999];
+        Random r = new Random();
+        for (int i = 0; i < a.length; i++) {
+            a[i] = r.nextInt(9999999);
+        }
+        Sortable sort = new QkSort(a);
+
+        long start = System.currentTimeMillis();
+        sort.sort();
+        long end = System.currentTimeMillis();
+        System.out.println("排序时间：" + (end - start));
+
+    }
 }
